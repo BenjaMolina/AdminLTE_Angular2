@@ -9,18 +9,25 @@ import { AppheaderComponent } from './components/appheader/appheader.component';
 import { AppmenuComponent } from './components/appmenu/appmenu.component';
 import { AppsettingsComponent } from './components/appsettings/appsettings.component';
 
+import { AppRoutingModule } from './app-routing/app-routing.module';
+import { Dashboardv1Component } from './components/dashboard/dashboardv1/dashboardv1.component';
+import { Dashboardv2Component } from './components/dashboard/dashboardv2/dashboardv2.component';
+
 @NgModule({
   declarations: [
     AppComponent,
     AppfooterComponent,
     AppheaderComponent,
     AppmenuComponent,
-    AppsettingsComponent
+    AppsettingsComponent,
+    Dashboardv1Component,
+    Dashboardv2Component
   ],
   imports: [
     BrowserModule,
     FormsModule,
-    HttpModule
+    HttpModule,
+    AppRoutingModule //Para las rutas
   ],
   providers: [],
   bootstrap: [AppComponent]
